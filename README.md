@@ -1,27 +1,39 @@
-# MyToken Solidity Contract
+# MyCredits Solidity Contract
 
 ## Description
-This Solidity program defines a basic ERC20 token contract named `MyToken`. The contract includes functionalities for minting new tokens and burning existing tokens. It serves as a simple demonstration of how to create and interact with ERC20 tokens on the Ethereum blockchain.
+This Solidity contract provides basic functionalities for managing a custom token named "MyCredits" with the symbol "TOK". It allows token minting (creation) and burning (destruction), while keeping track of the total token supply and individual token balances.
 
-## Getting Started
-### Prerequisites
-- Ensure you have an Ethereum development environment set up.
-- You can use Remix, an online Solidity IDE, or your preferred development environment.
+## Functionalities
+- **Token Basics**:
+  - `name`: Stores the name of the token, set to "MyCredits".
+  - `symbol`: Stores the symbol or abbreviation of the token, set to "TOK".
 
-### Installation
-1. Copy the provided Solidity code into a new file with a `.sol` extension.
-2. Compile the contract using your preferred Solidity compiler, ensuring compatibility with the version specified in the pragma statement (`0.8.18` in this case).
-3. Deploy the compiled contract to an Ethereum network, such as a local development network or a testnet.
+- **Token Supply and Balances**:
+  - `totalSupply`: Tracks the total number of tokens in existence.
+  - `balances`: Maps Ethereum addresses to their token balances.
 
-### Usage
-- After deploying the contract, you can interact with it using Ethereum wallets or by calling its functions programmatically.
-- The `mint` function allows the contract owner to create new tokens and assign them to a specified address.
-- The `burn` function allows token holders to destroy a specified amount of their tokens, reducing the total token supply.
+- **Minting Tokens**:
+  - `mint(address recipient, uint256 amount)`: Creates new tokens and assigns them to a recipient address.
 
-## Authors
-- Metacrafter Chris
-- [@metacraftersio](https://twitter.com/metacraftersio)
+- **Burning Tokens**:
+  - `burn(address from, uint256 amount)`: Removes existing tokens from a specified address.
+
+## Usage
+1. **Deployment**:
+   - Deploy the contract to an Ethereum network using a tool like Remix IDE or Truffle.
+
+2. **Interacting**:
+   - Mint new tokens by specifying a recipient address and the amount of tokens to create.
+   - Burn existing tokens by specifying an address and the amount to remove.
+
+3. **State Changes**:
+   - Each mint or burn operation updates the total token supply and individual balances.
+
+4. **Execution**:
+   - Transactions are executed on the Ethereum blockchain, requiring gas fees.
+
+5. **Viewing State**:
+   - Access the current state of the contract, including the total supply and token balances, through public variables or by querying the `balances` mapping.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
-
+This project is licensed under the MIT License. See the LICENSE file for details.
