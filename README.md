@@ -21,8 +21,8 @@ To deploy and interact with the MyCredits contract, follow the steps below:
      - `burn`: Enables users to destroy existing tokens by decreasing the total supply and the balance of a specified address.
 
 ## Authors
-Metacrafter Chris
-@metacraftersio
+Tayshaun Rala
+@tayshaunrala@gmail.com
 
 ## License
 This project is licensed under the MIT License. See the LICENSE.md file for details.
