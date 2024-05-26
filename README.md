@@ -1,39 +1,28 @@
 # MyCredits Solidity Contract
 
 ## Description
-This Solidity contract provides basic functionalities for managing a custom token named "MyCredits" with the symbol "TOK". It allows token minting (creation) and burning (destruction), while keeping track of the total token supply and individual token balances.
+The MyCredits Solidity contract is a simple Ethereum smart contract that manages a basic token system. It allows users to mint new tokens, burn existing tokens, and provides information about the total token supply. This contract can be used as a foundation for building more complex token systems or for educational purposes.
 
-## Functionalities
-- **Token Basics**:
-  - `name`: Stores the name of the token, set to "MyCredits".
-  - `symbol`: Stores the symbol or abbreviation of the token, set to "TOK".
+## Getting Started
+### Executing Program
+To deploy and interact with the MyCredits contract, follow the steps below:
 
-- **Token Supply and Balances**:
-  - `totalSupply`: Tracks the total number of tokens in existence.
-  - `balances`: Maps Ethereum addresses to their token balances.
+1. **Deployment Environment**: Use an Ethereum development environment or an online Solidity IDE like Remix.
 
-- **Minting Tokens**:
-  - `mint(address recipient, uint256 amount)`: Creates new tokens and assigns them to a recipient address.
+2. **Contract Deployment**:
+   - Create a new Solidity file and name it `MyCredits.sol`.
+   - Copy and paste the provided contract code into the file.
+   - Compile the contract using a Solidity compiler compatible with version ^0.8.0.
+   - Deploy the contract to an Ethereum network of your choice.
 
-- **Burning Tokens**:
-  - `burn(address from, uint256 amount)`: Removes existing tokens from a specified address.
+3. **Interacting with the Contract**:
+   - Once deployed, you can interact with the contract using its functions:
+     - `mint`: Allows users to create new tokens by increasing the total supply and the balance of a specified address.
+     - `burn`: Enables users to destroy existing tokens by decreasing the total supply and the balance of a specified address.
 
-## Usage
-1. **Deployment**:
-   - Deploy the contract to an Ethereum network using a tool like Remix IDE or Truffle.
-
-2. **Interacting**:
-   - Mint new tokens by specifying a recipient address and the amount of tokens to create.
-   - Burn existing tokens by specifying an address and the amount to remove.
-
-3. **State Changes**:
-   - Each mint or burn operation updates the total token supply and individual balances.
-
-4. **Execution**:
-   - Transactions are executed on the Ethereum blockchain, requiring gas fees.
-
-5. **Viewing State**:
-   - Access the current state of the contract, including the total supply and token balances, through public variables or by querying the `balances` mapping.
+## Authors
+Metacrafter Chris
+@metacraftersio
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE.md file for details.
